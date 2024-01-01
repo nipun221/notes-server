@@ -295,6 +295,12 @@ Authorization: <jwt-access-token>
 }
 ```
 
+**Note**: Include the `accessToken` in the Headers of subsequent requests with the key `Authorization`:
+
+```
+Authorization: <jwt-access-token>
+```
+
 ### POST /notes
 
 - **Request:**
