@@ -44,7 +44,7 @@ The **Notes Server** is a backend application built with Node.js, Express, and M
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/nipun221/notes-server.git
    ```
 
 2. Install dependencies:
