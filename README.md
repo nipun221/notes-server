@@ -451,3 +451,7 @@ npm run dev
 ```
 
 The server will be running on the specified port, and you can make requests to the provided API endpoints.
+
+## Author
+
+This API is maintained by Nipun Vats. For inquiries, contact nipunvats5@gmail.com.
