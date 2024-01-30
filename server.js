@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const cors = require("cors");
 const { body, validationResult } = require('express-validator');
+const os = require('node:os');
 
 const app = express();
 app.use(express.json());
@@ -102,6 +103,18 @@ function authenticateToken(req, res, next) {
         next();
     });
 }
+
+// Home page
+app.get('/', (req, res) => {
+    const hello = `${os.hostname()} is running the "Notes Server"!`;
+    const paragraph = `The "Notes Server" is a backend application built with Node.js, Express, and MongoDB. 
+    It provides API endpoints for user authentication, note creation, retrieval, update, and deletion. 
+    This documentation provides a comprehensive guide on how to use and interact with the Notes Server.`;
+    console.log(hello);
+    const responseText = `${hello}\n${paragraph}`;
+    res.send(responseText);
+});
+
 
 // User registration
 app.post('/register', [
